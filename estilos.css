@@ -180,10 +180,12 @@ ul{
 
 /* Media queries para hacer el diseño responsive */
 @media only screen and (max-width: 600px) {
-    .grid-container {
+    .grid-containe .imginicio {
         grid-template-columns: 1fr;
         max-width: 100%;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
     }
 
     nav ul {
