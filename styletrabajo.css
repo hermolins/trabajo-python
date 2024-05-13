@@ -1,0 +1,48 @@
+  .trabajos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+  
+  
+  .carousel-item img {
+    
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: 300px; /* Asegura que la imagen no se desborde */
+    display: block; /* Evita que la imagen tenga espacios vacíos */
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+  
+  
+  .carousel-container {
+    position: relative;
+    
+  }
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-50%);
+  }
+  
+  .prev-btn {
+    left: 5px;
+  }
+  
+  .next-btn {
+    right: 5px;
+  }
+  /* Media query para pantallas medianas */
+@media screen and (max-width: 1024px) {
+  .trabajos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .trabajos {
+    grid-template-columns: 1fr;
+  }
+}

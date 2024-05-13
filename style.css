@@ -1,0 +1,182 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+
+header, main, footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    
+}
+.header img {
+    max-width: 150px;
+    height: auto;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    background-color: #333;
+    overflow: hidden;
+}
+
+header nav ul li {
+    margin-right: 10px;
+}
+header nav ul li a {
+    display: inline;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+
+
+/* Estilos del main */
+main {
+    max-width: 1200px; /* Establece un ancho máximo para el contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Agrega espacio alrededor del contenido */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    background-color: lightgray; /* Color de fondo*/
+}
+h1 {
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    color: red   
+}
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem;
+}
+p {
+    line-height: 2;
+    text-align: center;
+}
+/*estilos para los formularios*/
+.datosCliente {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+}
+.datosPtomocionDias{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+}
+
+.datosPtomocionHorasMatutinas{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+}
+
+.datosPtomocionHorasVespertinas{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+
+}
+
+/* Estilo para el primer div */
+.inicio {
+    margin-bottom: 20px; /* Agrega espacio entre este div y el siguiente */
+}
+
+/* Estilo para la imagen dentro del primer div */
+.inicio img {
+    max-width: 100%; /* Hace que la imagen sea responsive */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    margin: 0 auto 20px; /* Centra la imagen horizontalmente y agrega espacio debajo */
+}
+
+
+/* Estilo para el segundo div */
+.caracteristicas {
+    text-align: center;
+    padding-top: 20px; /* Agrega espacio arriba del segundo div */
+}
+
+/* Estilo para la lista dentro del segundo div */
+.caracteristicas ul {
+    
+    list-style: none; /* Elimina los estilos de la lista predeterminados */
+    padding: 10px; /* Elimina el espacio interno de la lista */
+}
+
+/* Estilo para los elementos de la lista dentro del segundo div */
+.caracteristicas li {
+    margin-bottom: 10px; /* Agrega espacio entre los elementos de la lista */
+}
+
+/* Estilos del footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    
+}
+
+footer ul {
+    list-style: none;
+    padding: 20px;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+    /* Ajustes para dispositivos con un ancho máximo de 800px */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /* Ajustes para dispositivos con un ancho máximo de 400px */
+    .imginicio {
+        max-width: 100%;
+    }
+}
