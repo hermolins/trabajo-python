@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./imagenes/CircleBadgeBarber.png">
     <title>Reservas</title>
 </head>
 <body>
-    <div class="grid-container">
     <header class="header">
         <img src="./imagenes/barbershoplogo.png" alt="log">
 
@@ -44,72 +43,50 @@
 
               <div class="datosPtomocionDias">
                 <h4>Dias de semana</h4>
-                <form action="promo1.js">
-
-                        <input type="radio" id="lunes" name="dia_de_semana" value="Lunes">
-                        <label for="lunes">Lunes</label><br>
-                        <input type="radio" id="martes" name="dia_de_semana" value="Martes">
-                        <label for="martes">Martes</label><br>
-                        <input type="radio" id="miercoles" name="dia_de_semana" value="Miercoles">
-                        <label for="miercoles">Miercoles</label><br>
-                        <input type="radio" id="jueves" name="dia_de_semana" value="Jueves">
-                        <label for="jueves">Jueves</label><br>
-                        <input type="radio" id="viernes" name="dia_de_semana" value="Viernes">
-                        <label for="viernes">Viernes</label><br>
-                        <input type="radio" id="sabados" name="dia_de_semana" value="Sabados">
-                        <label for="sabados">Sabados</label><br>
-                        <button type="submit">Enviar</button>
-                </form>
+                <select>
+                    <option value="Dia">Selecciona Dia</option>
+                    <option value="Lunes">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miercoles">Miercoles</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+                    <option value="Sabado">Sabado</option>
+                </select>
             </div>
             <div class="datosPtomocionHorasMatutinas">
                 <h4>Horarios</h4>
+                <br>
                 <h4>Mañana</h4>
-                <form action="promo2.js">
-
-                    <input type="radio" id="de8-830" name="horarioMatutino" value="de8-830">
-                    <label for="de8-830">desde las 8 hasta las 8:30</label><br>
-                    <input type="radio" id="de830-9" name="horarioMatutino" value="de830-9">
-                    <label for="de830-9">desde las 8:30 hasta las 9</label><br>
-                    <input type="radio" id="de9-930" name="horarioMatutino" value="de9-930">
-                    <label for="de9-930">desde las 9 hasta las 9:30</label><br>
-                    <input type="radio" id="de930-10" name="horarioMatutino" value="de930-10">
-                    <label for="de930-10">desde las 9:30 hasta las 10</label><br>
-                    <input type="radio" id="de10-1030" name="horarioMatutino" value="de10-1030">
-                    <label for="de10-1030">desde las 10 hasta las 10:30</label><br>
-                    <input type="radio" id="de1030-11" name="horarioMatutino" value="de1030-11">
-                    <label for="de1030-11">desde las 10:30 hasta las 11</label>  <br>
-                    <input type="radio" id="de11-1130" name="horarioMatutino" value="de11-1130">
-                    <label for="de11-1130">desde las 11 hasta las 11:30</label><br>
-                    <input type="radio" id="de1130-12" name="horarioMatutino" value="de1130-12">
-                    <label for="de1130-12">desde las 11:30 hasta las 12</label><br>
-                    <button type="submit">Enviar</button>
-                </form>
+                <h4>Mañana</h4>
+                <select>
+                    <option value="Mañana">Mañana</option>
+                    <option value="">De 8 a 8:30</option>
+                    <option value="">De 8:30 a 9</option>
+                    <option value="">De 9 a 9:30</option>
+                    <option value="">De 9:30 a 10</option>
+                    <option value="">De 10 a 10:30</option>
+                    <option value="">De 10:30 a 11</option>
+                    <option value="">De 11 a 11:30</option>
+                    <option value="">De 11:30 a 12</option>
+                </select>
 
             </div>
 
             <div class="datosPtomocionHorasVespertinas">
-            <h4>Tarde</h4>
+                <h4>Tarde</h4>
 
-                <form action="promo3.js" method="post">
+                <select>
+                    <option value="Tarde">Tarde</option>
+                    <option value="">De 16 a 16:30</option>
+                    <option value="">De 16:30 a 17</option>
+                    <option value="">De 17 a 17:30</option>
+                    <option value="">De 17:30 a 18</option>
+                    <option value="">De 18 a 18:30</option>
+                    <option value="">De 18:30 a 19</option>
+                    <option value="">De 19 a 19:30</option>
+                    <option value="">De 19:30 a 30</option>
+                </select>
 
-                    <input type="radio" id="de16-1630" name="horarioMatutino" value="de16-1630">
-                    <label for="de16-1630">desde las 16 hasta las 16:30</label><br>
-                    <input type="radio" id="de1630-17" name="horarioMatutino" value="de1630-17">
-                    <label for="de1630-17">desde las 16:30 hasta las 17</label><br>
-                    <input type="radio" id="de17-1730" name="horarioMatutino" value="de17-1730">
-                    <label for="de17-1730">desde las 17 hasta las 17:30</label><br>
-                    <input type="radio" id="de1730-18" name="horarioMatutino" value="de1730-18">
-                    <label for="de1730-18">desde las 17:30 hasta las 18</label><br>
-                    <input type="radio" id="de18-1830" name="horarioMatutino" value="de18-1830">
-                    <label for="de18-1830">desde las 18 hasta las 18:30</label><br>
-                    <input type="radio" id="de1830-19" name="horarioMatutino" value="de1830-19">
-                    <label for="de1830-19">desde las 18:30 hasta las 19</label> <br>
-                    <input type="radio" id="de19-1930" name="horarioMatutino" value="de19-1930">
-                    <label for="de19-1930">desde las 19 hasta las 19:30</label><br>
-                    <input type="radio" id="de1930-20" name="horarioMatutino" value="de1930-20">
-                    <label for="de1930-20">desde las 19:30 hasta las 20</label><br>
-                    <button type="submit">Enviar</button>
-                </form>
             </div>
 
 
@@ -127,7 +104,7 @@
         <br>
     </footer>
 
-</div>
+
 
 </body>
 </html>
