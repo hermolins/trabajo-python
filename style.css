@@ -10,12 +10,18 @@
 
 header, main, footer {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Estilos del header */
 header {
+    height: 110px;
+    width: 100%;
+    margin: 0 ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -55,8 +61,8 @@ header nav ul li a:hover {
 
 /* Estilos del main */
 main {
-    max-width: 1200px; /* Establece un ancho máximo para el contenido */
     margin: 0 auto; /* Centra el contenido horizontalmente */
+    margin-top: 120px;
     padding: 20px; /* Agrega espacio alrededor del contenido */
     box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
     background-color: lightgray; /* Color de fondo*/
@@ -79,6 +85,7 @@ h3 {
 p {
     line-height: 2;
     text-align: center;
+    padding: 2rem;
 }
 .aviso {
     font-family: sans-serif;
