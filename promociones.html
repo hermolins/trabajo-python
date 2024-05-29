@@ -5,62 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylePromos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="icon" href="/imagenes/CircleBadgeBarber.png">
     <title>Promociones</title>
 </head>
 <body>
-        <header class="header">
-             <img src="./imagenes/barbershoplogo.png" alt="log">
-
-
-                <nav>
-                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="reservas.html">Reservas </a></li>
-                        <li><a href="trabajos.html">Trabajos </a></li>
-                        <li><a href="contactos.html">Contactos </a></li>
-                     </ul>
-               </nav>
-        </header>
+        <header id="main-header"></header>
         <main>
             <h2>Promociones</h2>
 
-            <div class="datosCliente">
-                <form>
-                     <label for="nombre">Nombre:</label><br>
-                     <input type="text" id="nombre" name="nombre"><br>
-                     <label for="apellido"> Apellido:</label><br>
-                     <input type="text" id="apellido" name="apellido"><br>
-                     <label for="telefono">Teléfono:</label><br>
-                     <input type="text" id="telefono" name="telefono"><br>
-                     <label for="email">Correo electrónico</label><br>
-                     <input type="email" id="email" name="email"><br>
-                     <label for="fecha">Fecha de Turno</label><br>
-                     <input type="date" id="fecha" name="fecha"><br>
-                     <input type="search" value="Enviar">
-                     <button type="submit">Enviar</button>
-                </form>
-            </div>
-            <br>
-            <div>
-            <label for="servicio">Elija el Trabajo</label>
-                <select id="servicio" name="servicio">
-                    <option value="retoque">Retoque barba</option>
-                    <option value="limpieza">Limpieza de rostro</option>
-                    <option value="corte">Corte y marcado de cabello</option>
-                    <option value="total">Estética total</option>
-                </select>
-            </div>
-            <br>
-            <div>
-                <label for="repeticion">Defina la frecuencia mensual</label>
-                    <select id="repeticion" name="repeticion">
-                        <option value="unaVez">1 Vez por mes</option>
-                        <option value="dosVeces">2 Veces por mes</option>
-                        <option value="todoMes">Todas las semanas</option>
-                    </select>
-            </div>
+            <div class="grid-Container">
 
+
+                <fieldset class="grid-Item">
+                    <legend class="texto">Trabajos y Servicios</legend>
+                    <ul>
+                        <li>Corte de cabello - <span id="corte">5500</span></li>
+                        <li>Marcado y corte de barba y bigote - <span id="barba">4500</span></li>
+                        <li>Limpieza facial - <span id="limpieza">2500</span></li>
+                        <li>Estética Total - <span id="total">10000</span></li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="grid-Item">
+                    <legend class="texto">Elección de trabajos y frecuencia</legend>
+                    <form>
+                        <div>
+                            <label for="servicio">Elija el Trabajo</label>
+                            <select id="servicio" name="servicio">
+                                <option value="basio">-</option>
+                                <option value="corte">Corte y marcado de cabello</option>
+                                <option value="retoque">Retoque barba y bigote</option>
+                                <option value="limpieza">Limpieza de rostro</option>
+                                <option value="total">Estética total</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="diaSemana">Elija el día</label>
+                            <select id="diaSemana" name="diaSemana">
+                                <option value="nada">-</option>
+                                <option value="lunes">Lunes</option>
+                                <option value="martes">Martes</option>
+                                <option value="miercoles">Miercoles</option>
+                                <option value="jueves">Jueves</option>
+                                <option value="viernes">Viernes</option>
+                                <option value="sabado">Sabado</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="repeticion">Defina la frecuencia mensual</label>
+                            <select id="repeticion" name="repeticion">
+                                <option value="blanco">-</option>
+                                <option value="unaVez">1 Vez por mes</option>
+                                <option value="dosVeces">2 Veces por mes</option>
+                                <option value="todoMes">Todas las semanas</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="meses">Determine la cantidad de meses</label>
+                            <select id="meses" name="meses">
+                                <option value="blanco">-</option>
+                                <option value="1mes">Solo un mes</option>
+                                <option value="2meses">Por dos meses</option>
+                                <option value="3meses">Por tres meses</option>
+                            </select>
+                        </div>
+
+
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <input type="reset" id="borrarSelect" value="Borrar" class="btn text-white fs-6 btnBorrar">
+
+                        </div>
+
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn text-white fs-6 btnResumen"
+                                type="button" id="resumen">Resumen</button>
+                        </div>
+                    </form>
+                </fieldset>
+
+                <fieldset class="grid-Item">
+                    <legend class="texto">Total a pagar</legend>
+                        <h3 id="pago">Total a pagar:</h3>
+                        <h3 id="desSemana">descuento por dia de semana</h3>
+                        <h3 id="desMeses">descuento por cantidad de meses</h3>
+                        <h3 id="totalDesc">-</h3>
+
+                </fieldset>
+            </div>
         </main>
         <footer>
             <h3>Trabajo integrador FULL STACK PYTHON</h3>
@@ -69,10 +107,10 @@
                 <li>Her Molins Adrian Eduardo</li>
                 <li>Salazar Jorge Martin</li>
                 <li>Escobar Juan Ignacio</li>
-                <li>ARNHARDT Sergio Alberto</li>
+                <li>Arnhardt Sergio Alberto</li>
             </ul>
-            <br>
         </footer>
-
+        <script src="./header.js"></script>
+        <script src="./promo.js"></script>
 </body>
 </html>

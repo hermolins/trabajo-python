@@ -3,12 +3,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
   }
-  .reservas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-  }
-  
   
   .carousel-item img {
     

@@ -1,0 +1,100 @@
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.grid-Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-Item {
+  background-color: rgb(226, 224, 224);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.grid-Item legend {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.grid-Item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.grid-Item li {
+  padding: 5px 0;
+  font-size: 1.1rem;
+}
+
+.grid-Item span {
+  font-weight: bold;
+}
+
+.grid-Item form div {
+  margin-bottom: 15px;
+}
+
+.grid-Item label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.grid-Item select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.gap-2 {
+  gap: 10px;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btnBorrar {
+  background-color: #dc3545;
+}
+
+.btnBorrar:hover {
+  background-color: #c82333;
+}
+
+#pago, #desSemana, #desMeses, #totalFinal, #totaldesc, #totalDesc {
+  display: none;
+}

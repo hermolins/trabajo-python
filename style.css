@@ -29,9 +29,11 @@ header {
     padding: 20px;
     
 }
-.header img {
+
+header img {
     max-width: 100px;
     height: auto;
+    width: auto;
 }
 
 
@@ -61,6 +63,7 @@ header nav ul li a:hover {
 
 /* Estilos del main */
 main {
+     /* Establece un ancho máximo para el contenido */
     margin: 0 auto; /* Centra el contenido horizontalmente */
     margin-top: 120px;
     padding: 20px; /* Agrega espacio alrededor del contenido */
@@ -95,32 +98,61 @@ p {
     border: 1rem solid #cc3232;
 }
 /*estilos para los formularios*/
-.datosCliente {
-    text-align: center;
-    width: 100%;
-    display: inline-block;
+.reservas {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
     padding: 20px;
-}
-.datosPtomocionDias{
-    text-align: center;
-    width: 100%;
-    display: inline-block;
-    padding: 20px;
+    background-color: #eaebec;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.datosPtomocionHorasMatutinas{
-    text-align: center;
-    width: 100%;
-    display: inline-block;
+.reservas .column {
+    flex: 1;
+    max-width: 400px;
     padding: 20px;
+    background-color: #f3f1f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.datosPtomocionHorasVespertinas{
-    text-align: center;
-    width: 100%;
-    display: inline-block;
-    padding: 20px;
+.reservas .column h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
 
+.reservas .column form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservas .column label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.reservas .column input,
+.reservas .column select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reservas .column button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reservas .column button:hover {
+    background-color: #0056b3;
 }
 
 /* Estilo para el primer div */
@@ -176,6 +208,7 @@ footer ul li {
 @media only screen and (max-width: 800px) {
     /* Ajustes para dispositivos con un ancho máximo de 800px */
     header {
+        margin: 0 auto;
         flex-direction: column;
         align-items: center;
     }
@@ -186,11 +219,73 @@ footer ul li {
     header nav ul li {
         margin: 10px 0;
     }
+    .reservas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reservas .column {
+        max-width: none;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 400px) {
     /* Ajustes para dispositivos con un ancho máximo de 400px */
     .imginicio {
         max-width: 100%;
+    }
+    footer {
+        padding: 5% 1%;
+    }
+
+    footer ul li {
+        margin-bottom: 1%;
+    }
+    .reservas {
+        padding: 10px;
+    }
+
+    .reservas .column {
+        padding: 10px;
+    }
+
+    .reservas .column h4 {
+        font-size: 1rem;
+    }
+
+    .reservas .column input,
+    .reservas .column select {
+        padding: 8px;
+    }
+
+    .reservas .column button {
+        padding: 8px 10px;
+    }
+}
+/* Estilos generales para dispositivos grandes */
+body {
+    font-size: 16px;
+}
+/* Breakpoints agragados*/
+
+/* Breakpoint para dispositivos medianos */
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+/* Breakpoint para dispositivos pequeños */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Breakpoint para dispositivos muy pequeños */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 13px;
     }
 }
