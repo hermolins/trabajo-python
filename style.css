@@ -48,17 +48,20 @@ header nav ul li {
     margin-right: 10px;
 }
 header nav ul li a {
-    display: inline;
+    display: block; /* Asegura que el enlace ocupe todo el espacio del li */
     color: white;
     font-style: italic;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px; /* Aumenta el padding para botones más grandes */
     text-decoration: none;
-}
-header nav ul li a:hover {
-    background-color: #555;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para los cambios de color */
+    border-radius: 4px; /* Bordes redondeados */
 }
 
+header nav ul li a:hover {
+    background-color: #555;
+    color: #ffd700; /* Cambia el color del texto al hacer hover */
+}
 
 
 /* Estilos del main */
