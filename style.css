@@ -110,7 +110,13 @@ p {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
+.formstyle {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
 .reservas .column {
     flex: 1;
     max-width: 400px;
@@ -222,7 +228,7 @@ footer ul li {
     header nav ul li {
         margin: 10px 0;
     }
-    .reservas {
+    .reservas .formstyle {
         flex-direction: column;
         align-items: center;
     }
@@ -245,7 +251,7 @@ footer ul li {
     footer ul li {
         margin-bottom: 1%;
     }
-    .reservas {
+    .reservas .formstyle {
         padding: 10px;
     }
 

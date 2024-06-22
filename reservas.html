@@ -14,72 +14,74 @@
     <main>
         <h2>Reservas</h2>
         <div class="reservas">
-            <div class="column">
-                <div class="datosCliente">
-                    <form>
-                        <label for="nombre">Nombre:</label><br>
-                        <input type="text" id="nombre" name="nombre"><br>
-                        <label for="apellido"> Apellido:</label><br>
-                        <input type="text" id="apellido" name="apellido"><br>
-                        <label for="telefono">Telefono:</label><br>
-                        <input type="text" id="telefono" name="telefono"><br>
-                        <label for="email">Correo electronico</label><br>
-                        <input type="email" id="email" name="email"><br>
-                        <label for="fecha">Fecha de Turno</label><br>
-                        <input type="date" id="fecha" name="fecha"><br>
-                        <button type="submit">Enviar</button>
-
-                    </form>
+            <form class="formstyle">
+                <div class="column">
+                    <div class="datosCliente">
+                            <label for="nombre">Nombre:</label><br>
+                            <input type="text" id="nombre" name="nombre"><br>
+                            <label for="apellido"> Apellido:</label><br>
+                            <input type="text" id="apellido" name="apellido"><br>
+                            <label for="telefono">Telefono:</label><br>
+                            <input type="number" id="telefono" name="telefono"><br>
+                            <label for="email">Correo electronico</label><br>
+                            <input type="email" id="email" name="email"><br>
+                            <label for="fecha">Fecha de Turno</label><br>
+                            <input type="date" id="fecha" name="fecha"><br>
+                            <label for="duracion">Periodo de turnos</label>
+                            <select name="duracion" id="duracion">
+                                <option value=""></option>
+                                <option value="unaVez">1 Turno </option>
+                                <option value="unMes">1 Mes</option>
+                                <option value="dosMeses"> 2 Meses</option>
+                                <option value="tresMeses">3 Meses</option>
+                            </select>
+                            <!--<button type="submit">Enviar</button>-->
+                    </div>
                 </div>
-            </div>
-            <div class="column">
-                  <div class="datosPtomocionDias">
-                    <h4>Días de semana</h4>
-                    <select>
-                        <option value="Dia">Selecciona Dia</option>
-                        <option value="Lunes">Lunes</option>
-                        <option value="Martes">Martes</option>
-                        <option value="Miercoles">Miercoles</option>
-                        <option value="Jueves">Jueves</option>
-                        <option value="Viernes">Viernes</option>
-                        <option value="Sabado">Sabado</option>
-                    </select>
+                <div class="column">
+                    <div class="datosPtomocionDias">
+                        <h4>Días de semana</h4>
+                        <select id="diaSemana">
+                            <option value="">Selecciona Dia</option>
+                            <option value="Lunes">Lunes</option>
+                            <option value="Martes">Martes</option>
+                            <option value="Miercoles">Miercoles</option>
+                            <option value="Jueves">Jueves</option>
+                            <option value="Viernes">Viernes</option>
+                            <option value="Sabado">Sabado</option>
+                        </select>
+                    </div>
+                    <div class="datosPtomocionHorasMatutinas">
+                        <h4>Horarios</h4>
+                        <select id="temprano">
+                            <option value="">Mañana</option>
+                            <option value="De 8 a 8:30">De 8 a 8:30</option>
+                            <option value="De 8:30 a 9">De 8:30 a 9</option>
+                            <option value="De 9 a 9:30">De 9 a 9:30</option>
+                            <option value="De 9:30 a 10">De 9:30 a 10</option>
+                            <option value="De 10 a 10:30">De 10 a 10:30</option>
+                            <option value="De 10:30 a 11">De 10:30 a 11</option>
+                            <option value="De 11 a 11:30">De 11 a 11:30</option>
+                            <option value="De 11:30 a 12">De 11:30 a 12</option>
+                            <option value="De 16 a 16:30">De 16 a 16:30</option>
+                            <option value="De 16:30 a 17">De 16:30 a 17</option>
+                            <option value="De 17 a 17:30">De 17 a 17:30</option>
+                            <option value="De 17:30 a 18">De 17:30 a 18</option>
+                            <option value="De 18 a 18:30">De 18 a 18:30</option>
+                            <option value="De 18:30 a 19">De 18:30 a 19</option>
+                            <option value="De 19 a 19:30">De 19 a 19:30</option>
+                            <option value="De 19:30 a 30">De 19:30 a 30</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button id="guardar" type="button">Guardar</button>
+                    </div>
+                    <div>
+                        <input id="limpiar" type="reset" value="Limpiar">
+                    </div>
                 </div>
-                <div class="datosPtomocionHorasMatutinas">
-                    <h4>Horarios</h4>
-                    <br>
-                    <h4>Mañana</h4>
-                    <select>
-                        <option value="Mañana">Mañana</option>
-                        <option value="">De 8 a 8:30</option>
-                        <option value="">De 8:30 a 9</option>
-                        <option value="">De 9 a 9:30</option>
-                        <option value="">De 9:30 a 10</option>
-                        <option value="">De 10 a 10:30</option>
-                        <option value="">De 10:30 a 11</option>
-                        <option value="">De 11 a 11:30</option>
-                        <option value="">De 11:30 a 12</option>
-                    </select>
-
-                </div>
-
-                <div class="datosPtomocionHorasVespertinas">
-                    <h4>Tarde</h4>
-
-                    <select>
-                        <option value="Tarde">Tarde</option>
-                        <option value="">De 16 a 16:30</option>
-                        <option value="">De 16:30 a 17</option>
-                        <option value="">De 17 a 17:30</option>
-                        <option value="">De 17:30 a 18</option>
-                        <option value="">De 18 a 18:30</option>
-                        <option value="">De 18:30 a 19</option>
-                        <option value="">De 19 a 19:30</option>
-                        <option value="">De 19:30 a 30</option>
-                    </select>
-
-                </div>
-            </div>
+                <div class="column"></div>
+            </form>
 
         </div>
 
@@ -98,6 +100,7 @@
     </footer>
 
     <script src="header.js"></script>
+    <script src="reservas.js"></script>
 
 </body>
 </html>
