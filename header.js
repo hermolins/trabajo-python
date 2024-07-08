@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     const pages = {
-        "index.html": "Inicio",
-        "reservas.html": "Reservas",
-        "promociones.html": "Promociones",
-        "trabajos.html": "Trabajos",
-        "contactos.html": "Contactos"
+        "/index.html": "Inicio",
+        "/reservas.html": "Reservas",
+        "/promociones.html": "Promociones",
+        "/trabajos.html": "Trabajos",
+        "/contactos.html": "Contactos",
+        "./comercio/e-comers.html": "Ventas"
     };
 
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }).join("");
 
     const headerContent = `
-        <img src="./imagenes/barbershoplogo.png" alt="log" class="header-img">
+        <img src="/imagenes/barbershoplogo.png" alt="log" class="header-img">
         <nav>
             <ul>
                 ${navItems}
