@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar Producto</title>
     <link rel="stylesheet" href="./static/css/estilos.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
+    <header id="main-header"></header>
+    <main>
     <div class="logo-centrado">
-        <img src="./static/imagenes/logo_Codo.jpg" alt="logo">
+        <h2>Tienda Goodluck</h2>
     </div>
     <h1>Modificar Productos del Inventario</h1><br>
 
@@ -21,7 +24,7 @@
         <form id="form-obtener-producto">
             <label for="codigo">Código:</label>
             <input type="text" id="codigo" required><br>
-            <button type="submit">Modificar Producto</button> <a href="index.html">Menu principal</a>
+            <button type="submit">Modificar Producto</button> <a href="e-comers.html">Menu principal</a>
         </form>
 
         <!-- Segundo formulario: se muestra solo si mostrarDatosProducto es verdadero. Llama a la función guardarCambios -->
@@ -56,8 +59,8 @@
         </div>
     </div>
     <script>
-        // const URL = "http://127.0.0.1:5000/"
         const URL = "http://127.0.0.1:5000/"
+        //const URL = "http://127.0.0.1:5502/"
 
 
         // Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
@@ -115,7 +118,7 @@
                 const imagenActual = document.getElementById('imagen-actual');
                 if (imagen_url && !imagenSeleccionada) { // Verifica si imagen_url no está vacía y no se ha seleccionado una imagen
                     
-                     imagenActual.src = 'https://www.pythonanywhere.com/user/juanpablocodo/files/home/juanpablocodo/mysite/static/imagenes/' + imagen_url;                    
+                     imagenActual.src = './static/imagenes/' + imagen_url;                    
 			//Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
                     //imagenActual.src = 'https://www.pythonanywhere.com/user/USUARIO/files/home/USUARIO/mysite/static/imagenes/' + imagen_url;
                     imagenActual.style.display = 'block'; // Muestra la imagen actual
@@ -205,5 +208,20 @@
             document.getElementById('datos-producto').style.display = 'none';
         }
     </script>
+    </main>
+    <footer>
+        <h3>Trabajo integrador FULL STACK PYTHON</h3>
+        <h4>INTEGRANTES</h4>
+        <ul>
+            <li>Her Molins Adrian Eduardo</li>
+            <li>Salazar Jorge Martin</li>
+            <li>Escobar Juan Ignacio</li>
+            <li>ARNHARDT Sergio Alberto</li>
+            <li>Luida Medina Tenorio</li>
+        </ul>
+        <br>
+
+    </footer>
+    <script src="../header.js"></script>
 </body>
 </html>

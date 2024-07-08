@@ -35,19 +35,11 @@ class Catalogo:
         except mysql.connector.Error as err:
             # Si la base de datos no existe, la creamos
             if err.errno == mysql.connector.errorcode.ER_BAD_DB_ERROR:
-                self.cursor.execute(f"CREATE DATABASE {database}")
+                #self.cursor.execute(f"CREATE DATABASE {database}")
                 self.conn.database = database
             else:
                 raise err
 
-        self.cursor.execute('''CREATE TABLE IF NOT EXISTS productos (
-            codigo INT AUTO_INCREMENT PRIMARY KEY,
-            descripcion VARCHAR(255) NOT NULL,
-            cantidad INT NOT NULL,
-            precio DECIMAL(10, 2) NOT NULL,
-            imagen_url VARCHAR(255),
-            proveedor INT(4))''')
-        self.conn.commit()
         
         # Cerrar el cursor inicial y abrir uno nuevo con el parámetro dictionary=True
         self.cursor.close()
@@ -104,10 +96,10 @@ class Catalogo:
 # Cuerpo del programa
 #--------------------------------------------------------------------
 # Crear una instancia de la clase Catalogo
-catalogo = Catalogo(host='127.0.0.1', user='root', password='', database='goodlook')
+catalogo = Catalogo(host='127.0.0.1', user='root', password='', database='goodluck')
 
 # Carpeta para guardar las imagenes
-ruta_destino = './static/imagenes'
+ruta_destino = './static/imagenes/'
 
 @app.route("/productos", methods=["GET"])
 def listar_productos():

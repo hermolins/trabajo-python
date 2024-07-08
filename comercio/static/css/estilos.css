@@ -1,12 +1,10 @@
 /* Estilos para todo el proyecto */
-/*{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-}*/
+
+
 
 body {
-    background-color: lightskyblue;
-    color:white;
+    background-color: lightgray;
+    color:black;
 }
 
 .contenedor-centrado {
@@ -21,11 +19,11 @@ body {
     align-items: center;
     margin-bottom: 10px;
     margin-top: 10px;
-    
+
 }
 
+
 .logo-centrado img {
-    height: 150px;
     border-radius: 10px;
 }
 
@@ -36,7 +34,7 @@ body {
     top: 0;
     width: 100vw;
     height: 100px;
-    background-color: #390E8C;
+    background-color: lightgrey;
     display: flex;
     justify-content: flex-start;
     align-items: center; 
@@ -70,19 +68,20 @@ form {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #1d1a39;
+    background-color: lightgray;
     border: 1px solid lightslategray;
     border-radius: 5px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
+
 table {
     max-width: 90%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #1d1a39;
-    border: 1px solid lightslategray;
+    background-color: lightgray;
+    border: 1px solid lightgray;
     border-radius: 5px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -105,7 +104,7 @@ textarea {
 
 input[type="submit"] {
     padding: 10px;
-    background-color: #007bff;
+    background-color: #080808;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -133,9 +132,9 @@ button:hover {
 a {
     padding: 8px;
     margin:4px;
-    background-color: rgb(248, 202, 53);
-    color: #1d1a39;
-    border: 2px #1d1a39 dashed;
+    background-color: gray;
+    color: white;
+    border: 2px black solid;
     border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
@@ -144,7 +143,7 @@ a {
 }
 
 a:hover {
-    background-color: #1d1a39;
+    background-color: #0c6fe0;
     border: 1px white solid;
     color: white;
 }

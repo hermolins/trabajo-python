@@ -5,7 +5,7 @@ MétodosDescripción
 .then(resolve,reject)       Método equivalente a las dos anteriores en el mismo .then().
 .finally(end)               Ejecuta la función callback end tanto si se cumple como si se rechaza.
 
--------------------------------------------------------------
+//-------------------------------------------------------------
 
 fetch("/url").then(function(response) {
     /* Código a realizar cuando se cumpla la promesa */
@@ -15,7 +15,7 @@ fetch("/url").then(function(response) {
     /* Código a realizar cuando se cumpla la promesa */
   });
 
--------------------------------------------------------------
+//-------------------------------------------------------------
 
   fetch("/url")
   .then(function(response) {
@@ -25,7 +25,7 @@ fetch("/url").then(function(response) {
     /* Código a realizar cuando se rechaza la promesa */
   });
 
-  -------------------------------------------------------------
+ // -------------------------------------------------------------
 
   fetch("/url")
   .then(response => {
@@ -38,6 +38,6 @@ fetch("/url").then(function(response) {
 
 
 
-  -------------------------------------------------------------
+ //---------------------------------------------------------------
 
   https://lenguajejs.com/javascript/asincronia/promesas/

@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listado de Productos</title>
     <link rel="stylesheet" href="./static/css/estilos.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../imagenes/CircleBadgeBarber.png">
 </head>
 
 <body>
+    <header id="main-header"></header>
+    <main>
     <div class="logo-centrado">
-        <img src="./static/imagenes/logo_Codo.jpg" alt="logo">
+        <h2>Tienda Goodluck</h2>
     </div>
     <h1>Listado de Productos del Inventario</h1><br>
 
@@ -20,18 +24,18 @@
             <tr>
                 <th>Código</th>
                 <th>Descripción</th>
-                <th>Cantidad</th>                
+                <th>Cantidad</th>
                 <th align="right">Precio</th>
                 <th>Imagen</th>
                 <th align="right">Proveedor</th>
-                
+
             </tr>
         </thead>
         <tbody id="tablaProductos"> </tbody>
     </table><br>
 
     <div class="contenedor-centrado">
-        <a href="index.html">Menu principal</a>
+        <a href="e-comers.html">Menu principal</a>
     </div>
     <script>
         const URL = "http://127.0.0.1:5000/"
@@ -81,5 +85,20 @@
                 alert('Error al obtener los productos.');
             });
     </script>
+    </main>
+    <footer>
+        <h3>Trabajo integrador FULL STACK PYTHON</h3>
+        <h4>INTEGRANTES</h4>
+        <ul>
+            <li>Her Molins Adrian Eduardo</li>
+            <li>Salazar Jorge Martin</li>
+            <li>Escobar Juan Ignacio</li>
+            <li>ARNHARDT Sergio Alberto</li>
+            <li>Luida Medina Tenorio</li>
+        </ul>
+        <br>
+
+    </footer>
+    <script src="../header.js"></script>
 </body>
 </html>
