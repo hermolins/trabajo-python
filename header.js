@@ -8,9 +8,13 @@ document.addEventListener("DOMContentLoaded", function() {
         "./comercio/e-comers.html": "Ventas"
     };
 
-    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    // Obtener la ruta relativa correcta de la página actual
+    const pathParts = window.location.pathname.split("/");
+    const currentPage = (pathParts.slice(-2).join("/") || "index.html").replace(/^\//, '');
+
     const navItems = Object.keys(pages).map(page => {
-        if (page === currentPage) {
+        const pageKey = page.replace(/^\.\//, ''); // Eliminar ./ del inicio de la clave
+        if (pageKey === currentPage) {
             return '';
         } else {
             return `<li><a href="${page}">${pages[page]}</a></li>`;
