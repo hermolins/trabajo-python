@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }).join("");
 
     const headerContent = `
-        <img src="/imagenes/barbershoplogo.png" alt="log" class="header-img">
+        <img src="../imagenes/barbershoplogo.png" alt="log" class="header-img">
         <nav>
             <ul>
                 ${navItems}

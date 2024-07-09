@@ -129,7 +129,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-a {
+.anav {
     padding: 8px;
     margin:4px;
     background-color: gray;
@@ -142,7 +142,7 @@ a {
     font-weight: 600;
 }
 
-a:hover {
+.anav:hover {
     background-color: #0c6fe0;
     border: 1px white solid;
     color: white;
